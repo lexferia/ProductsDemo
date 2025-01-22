@@ -1,0 +1,24 @@
+services:
+  productsdemo-webapi:
+    container_name: productsdemo-webapi
+    image: ${DOCKER_REGISTRY-}productsdemowebapi
+    build:
+      context: ProductsDemo.WebAPI
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8080:80"
+    depends_on:
+      - productsdemo-db
+
+  productsdemo-db:
+    container_name: productsdemo-db
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Aa123456
+    ports:
+      - "1433:1433"
+  
+
