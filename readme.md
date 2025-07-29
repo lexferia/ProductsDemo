@@ -1,6 +1,6 @@
 ﻿# Products Demo WebAPI
 
-Welcome to the **Products Demo WebAPI**! This project serves as a ready-made template that demonstrates how to implement pagination using SQL Server, .NET 6, and Docker. It is perfect for experiments, proofs of concept (PoCs), or as a foundation for building your own pagination-based applications.
+Welcome to the **Products Demo WebAPI**! This project serves as a ready-made template that demonstrates a simple RESTful API using SQL Server, .NET 6, and Docker. It is perfect for experiments, proofs of concept (PoCs), or as a foundation for building your own pagination-based applications.
 
 ---
 
